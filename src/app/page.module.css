@@ -1,0 +1,4 @@
+img {
+  -webkit-clip-path: ellipse(15% 100% at 50% 50%);
+          clip-path: ellipse(15% 100% at 50% 50%);
+}/*# sourceMappingURL=page.module.css.map */
