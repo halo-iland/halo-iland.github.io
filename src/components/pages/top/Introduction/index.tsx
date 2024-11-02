@@ -4,7 +4,7 @@ export const Introduction = () => {
     return (
         <section className={style.container} id="concept">
             <div>
-                <img src="/assets/kv-intro/main_4.png" alt="" />
+                <img src="/assets/kv-intro/main_4.png" alt="" className={style.main}/>
                 <div className={style.intro}>
                     <div className={style.jobun}>
                         <h3>〜ぼうけんのしるし〜</h3>
