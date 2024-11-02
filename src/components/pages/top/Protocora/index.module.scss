@@ -1,0 +1,57 @@
+@use '@/styles/common' as *;
+
+.protocora {
+    position: relative;
+    width: 100vw;
+    height: 100vw; //ここ変えなき
+    @include sp-tablet {
+        height: 280vw;
+    }
+    overflow: hidden;
+}
+
+.bg {
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 18.6vw;
+    width: 100vw;
+
+    background-image: url('/assets/protocora/bg-wide.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include sp-tablet {
+        background-color: #fff;
+        background-image: url('/assets/protocora/bg-sp.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.mainProtocora {
+    position: absolute;
+    z-index: 1;
+    min-width: 130vw;  
+    height: 44vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper {
+    margin: 22vw auto;
+    text-align: center;
+
+    @include sp-tablet {
+        width: 90vw;
+    }
+
+    .prts {
+        place-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+
+        @include sp-tablet {
+            grid-template-columns: 50% 50%;
+        }
+    } 
+}

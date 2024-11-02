@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const Header = () => {
     return (
         <header className={style.header}>
-            <nav className={style.side_nav}>
+            <nav className={style.nav}>
                 <ul>
                     <li>
                         <Link href="#protocora">Introduciton／Story</Link>

@@ -1,13 +1,27 @@
 import style from './index.module.scss'
-import Link from 'next/link'	
 
 export const Protocora = () => {
     return (
-        <section id="protocora" className={style.protocora}>
-            <h1>Protocora</h1>
-            <div style={{ margin: '0 auto', textAlign: 'center' }}>
-                <img src="/assets/protocora/protocora_2.png" alt="" style={{ margin: '0 auto'
-                , width: '90%' }} className="target-element"/>
+        <section id="protocora" >
+            <div className={style.protocora}>
+                <div>
+                    <img src="/assets/protocora/main_prt.png" alt="" className={style.mainProtocora}/>
+                </div>
+                <div className={style.bg}>
+                    <h1>Protocora</h1>
+                    <div className={style.wrapper}>
+                        {/* <img src="/assets/protocora/itiran.JPG" alt="" /> */}
+                        <div className={style.prts}>
+                        {[...Array(8)].map((_, i) => {
+                            return (
+                                <div key={i} className={style.prt}>
+                                    <img src={`/assets/protocora/prts/prt0${i + 2}.png`} alt="" />
+                                </div>
+                            )
+                        })}
+                        </div>
+                     </div>
+                 </div> 
             </div>
         </section>
     )

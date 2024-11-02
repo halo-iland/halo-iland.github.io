@@ -1,0 +1,104 @@
+@use '@/styles/common' as *;
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: min(90%, 1000px);
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include sp-tablet {
+        height: 300vw;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-family:'Times New Roman', Times, serif; 
+    }
+
+    p{
+        color: white;
+    }
+
+    .characters {
+        margin: 0 auto;
+        place-content: center;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+
+        @include sp-tablet {
+            display: block;
+        }
+
+        .character {
+            width: 100%;
+            height: 100vw;
+
+            @include sp-tablet{
+                height: 300px;
+            }
+        }
+        .sui, .uku, .niim {
+            height: 300px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: rotate(90deg);
+            background-position: center;
+            // transition: 0.5s background-image;
+
+            &:hover {
+                transform: rotate(0deg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        .sui {
+            background-image: url('/assets/characters/sui.PNG'); 
+            &:hover {
+                background-image: url('/assets/characters/sui_.png');
+            }
+        }
+        .uku {
+            background-image: url('/assets/characters/uku.PNG'); 
+            &:hover {
+                background-image: url('/assets/characters/uku_.png');
+            }
+        }
+        .niim {
+            background-image: url('/assets/characters/niim.PNG'); 
+            &:hover {
+                background-image: url('/assets/characters/niim_.png');
+            }
+        }
+    }
+
+
+    // @include sp {
+    //     background-image: url('/assets/characters/niim.PNG');
+    // }
+    // @include pc {
+    //     background-image: url('/assets/characters/sui.PNG');
+    // } 
+    // @include tablet {
+    //     background-image: url('/assets/characters/uku.PNG');
+    // }
+
+    // .sui {
+    //     width: 300px;
+    //     height: 400px; 
+    //     background-image: url('/assets/characters/sui.PNG');
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     transition: 0.5s background-image;
+
+    //     // background-color: #f00;
+    //     &:hover {
+    //         background-image: url('/assets/characters/uku.PNG');
+    //     }
+    // }
+
+}

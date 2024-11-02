@@ -1,0 +1,10 @@
+@use '@/styles/common' as *;
+
+.boken {
+    margin: 0 auto;
+    width: min(60vw, 700px);
+    
+    @include sp-tablet {
+        width: 90vw;
+    }
+}

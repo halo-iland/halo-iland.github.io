@@ -1,0 +1,33 @@
+@use './common' as *;
+
+[data-media='sp'] {
+    display: none;
+
+    @include sp {
+        display: block;
+    }
+}
+
+[data-media='pc'] {
+    display: none;
+
+    @include pc {
+        display: block;
+    }
+}
+
+[data-media='tablet'] {
+    display: none; 
+
+    @include tablet {
+        display: block;
+    }
+}
+
+[data-media='sp-tablet'] {
+    display: none;
+
+    @include sp-tablet {
+        display: block;
+    }
+}
