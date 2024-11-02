@@ -1,4 +1,5 @@
 import Background from "@/components/pages/top/Background";
+import Background1 from "@/components/pages/top/Background_";
 import { Header } from "@/components/pages/top/Header";
 import { Protocora } from "@/components/pages/top/Protocora";
 import { Introduction } from "@/components/pages/top/Introduction";
@@ -18,7 +19,10 @@ export default function Home() {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
       <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"/>
     </Head>
-      <Background />
+      <Background data-media="sp" />
+      <Background data-media="sp-tablet" />
+      <Background1 data-media="pc"/>
+      <Background1 data-media="tablet"/>
       <Header />
       <Introduction />
       <Protocora />

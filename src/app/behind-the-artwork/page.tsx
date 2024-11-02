@@ -39,11 +39,13 @@ export default function BehindTheArtworkPage() {
                     <p>少しずつ分かってくるハロilandの世界を、<br />
                     さまざまなメディアアートが詰め込まれたアルバムでお楽しみください。</p>
                 </div>
+                <img src="/assets/imade/team.png" alt="" className={style.center}/>
                 <img src="/assets/imade/imade-bg-2.png" alt="" />
             </section>
             <section>
                 <img src="/assets/imade/imade-bg.png" alt="" />
                 <img src="/assets/imade/image.png" alt="" />
+                <img src="/assets/imade/image_2.png" alt="" />
             </section>
         </>
     );
