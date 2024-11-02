@@ -2,10 +2,20 @@ import style from './index.module.scss'
 
 export const Introduction = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id="concept">
             <img src="/assets/kv-intro/main.png" alt="" />
-            <img src="/assets/kv-intro/intro.png" className={style.boken} alt="" />
-            <img src="/assets/kv-intro/map.png" className={style.boken} alt="" />
+            <div className={style.intro}>
+                <div className={style.jobun}>
+                    <h3>〜ぼうけんのしるし〜</h3>
+                    <p>ぼくたちは　ながいながい　たびの　すえ <br />  
+                        おおきな　まるい　ひかりを　みつけた<br />
+                        [ハロ]<br />
+                        うえの　うえに　あったもの
+                    </p>
+                </div>
+                <img src="/assets/kv-intro/intro.png" className={style.sirusi} alt="〜ぼうけんのしるし〜　ぼくたちは　ながいながい　たびの　すえ　おおきな　まるい　ひかりを　みつけた　[ハロ]　うえの　うえに　あったもの" />
+            </div>
+            <img src="/assets/kv-intro/map.png" className={style.map} alt="巴楼愛卵島　はろあいらんど" />
         </div>
     )
 }

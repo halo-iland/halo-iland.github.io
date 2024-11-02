@@ -1,22 +1,31 @@
+'use client'
 import style from './index.module.scss'
 import Link from 'next/link'	
 
 export const Header = () => {
+    const scrollToId = (id:string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }
+    }
     return (
         <header className={style.header}>
             <nav className={style.nav}>
                 <ul>
                     <li>
-                        <Link href="#protocora">Introduciton／Story</Link>
+                        <button onClick={() => scrollToId("concept")}>Top</button>
                     </li>
                     <li>
-                        <Link href="#protocora">Protocora</Link>
+                        <button onClick={() => scrollToId("protocora")}>Protocora</button>
                     </li>
                     <li>
-                        <Link href="#character">Character</Link>
+                        <button onClick={() => scrollToId("character")}>Character</button>
                     </li>
                     <li>
-                        <Link href="#contact">Contact</Link>
+                        <button onClick={() => scrollToId("contact")}>Contact</button>
                     </li>
                 </ul>
             </nav>

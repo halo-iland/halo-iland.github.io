@@ -1,7 +1,6 @@
 @use '@/styles/common' as *;
 
 .header {
-    height: 80px;
     @include sp-tablet {
         height: 0;
     }
@@ -13,7 +12,7 @@
     left: 0;
     top: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 4;
     display: flex;
     justify-content: center;
 
@@ -32,7 +31,7 @@
         margin-bottom: 20px;
         
     }
-    a {
+    a, button {
         color: white;
         text-decoration: none;
         font-size: 18px;
@@ -40,7 +39,7 @@
         display: block;
         transition: background-color 0.3s ease;
     }
-    a:hover {
+    a,button:hover {
         opacity: 0.7;
     }
 }

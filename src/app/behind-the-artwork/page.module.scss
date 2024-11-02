@@ -1,11 +1,12 @@
 @use '@/styles/common' as *;
 
 .logo {
-    z-index: 1;
     position: fixed;
     @include sp-tablet {
         margin: 0 auto;
         width: min(400px, 70%);
+        top: 25%;
+        left: 25%;
     }
 }
 

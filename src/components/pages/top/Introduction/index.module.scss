@@ -1,7 +1,59 @@
 @use '@/styles/common' as *;
 
-.boken {
+.intro {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+    width: min(90%, 900px);
+    color: white;
+    margin-bottom: 12vw;
+    margin-top: 16vw;
+    column-gap: 10vw;
+    @include sp-tablet {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .jobun {
+        font-family: "Shippori Mincho", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 10vw;
+        @include sp-tablet {
+            margin-left: 0;
+        }
+
+        h3 {
+            margin: 0 auto;            
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 2vw;
+            
+            @include sp {
+                font-size: 20px;
+            }
+        }
+        p {
+            line-height: 3cap;
+            text-align: center;
+            margin-bottom: 4vw;
+            @include sp {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .sirusi {
+        margin: 0 auto;
+        width: min(20vw, 300px);
+        object-fit: contain;
+        text-align: center;
+    }
+}
+
+.map {
+    margin: 0 auto;
+    margin-bottom: min(12vw, 120px);
     width: min(60vw, 700px);
     
     @include sp-tablet {

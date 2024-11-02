@@ -1,3 +1,5 @@
+@use '@/styles/common' as *;
+
 .share {
     margin: 0 auto;
     text-align: center;
@@ -7,9 +9,14 @@
     .sns {
         display: block;
         margin: 0 auto;
-        margin-top: 30px;
-        width: 50px;
+        margin-top: min(100px, 12vw);
+        width: 80px;
         transition: 0.5s opacity;
+        @include sp-tablet {
+            margin-top: 30px;
+            width: 50px;
+            transition: 0.5s opacity;
+        }
         
         &:hover {
             opacity: 0.7;
@@ -17,8 +24,14 @@
     }
 
     p {
-        margin-top: 4px;
-        font-size: 14px;
+        margin-top: 3vw;
+        font-size: 18px;
+        margin: 0 auto;
+        
+        @include sp {
+            margin-top: 4px;
+            font-size: 14px;
+        }
     }
 }
 .footer {
@@ -26,5 +39,8 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 150px;
+    @include sp {
+        margin-bottom: 40px;
+    }
 }
