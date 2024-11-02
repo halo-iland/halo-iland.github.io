@@ -19,7 +19,7 @@ export default function BehindTheArtworkPage() {
                 <img src="/assets/imade/key.png" className={style.key} alt="" /> 
             </section>
             <section className={style.container}>
-                <img src="/assets/imade/concept.png" className="concept" alt="concept 私たち人間は成長するとき　変身をしない。　時を刻むこと、新しく知ること、大人になること　生きとし生けるもの全てにおいて、成長や進化は尊いものだ。　私たちの身に起こる成長は　羽を手にするような壮大さはないけれど　目に見えずとも、大きな変化は起き続けている。　美しい姿で空を飛ぶ蝶の変身が教えてくれた　進化のドラマチックな一瞬は　まさにヒトの人生そのものなのかもしれない。　変わらないなかで、変わっていく。　それこそが、私たちの「変身」。" className={style.concept}/>
+                <img src="/assets/imade/concept.png" alt="concept 私たち人間は成長するとき　変身をしない。　時を刻むこと、新しく知ること、大人になること　生きとし生けるもの全てにおいて、成長や進化は尊いものだ。　私たちの身に起こる成長は　羽を手にするような壮大さはないけれど　目に見えずとも、大きな変化は起き続けている。　美しい姿で空を飛ぶ蝶の変身が教えてくれた　進化のドラマチックな一瞬は　まさにヒトの人生そのものなのかもしれない。　変わらないなかで、変わっていく。　それこそが、私たちの「変身」。" className={style.concept}/>
             </section>
             <section className={style.statement}>
                 <img src="/assets/imade/imade-bg-3.png" alt=""  className={style.wide}/>
