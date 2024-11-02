@@ -1,0 +1,52 @@
+@use '@/styles/common' as *;
+
+.logo {
+    z-index: 1;
+    position: fixed;
+    @include sp-tablet {
+        margin: 0 auto;
+        width: min(400px, 70%);
+    }
+}
+
+.key {
+}
+.concept {
+    margin: 0 auto;
+    text-align: center;
+    object-fit: cover;
+
+    @include sp-tablet {
+        position: absolute;
+        min-width: 130vw;  
+        height: 130vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.statement {
+    margin: 0 auto;
+    @include sp-tablet{
+        margin-top: 130vw;
+    }
+    .content {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 80%;
+
+        color: #444;
+
+        p {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 15px;
+            padding-top: 3vw;
+            small {
+                color: #888;
+                font-size: 12px;
+            }
+        }
+    }
+}
