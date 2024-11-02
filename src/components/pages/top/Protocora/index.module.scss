@@ -66,10 +66,9 @@
     .modal {
         position: fixed;
         margin: 0 auto;
-        // background-color: rgba(20, 20, 255, 0.3);
         width: 100vw;
         height: 100vh;
-        background-color: rgba(204, 209, 203, 0.5); /* 背景を黒に */
+        background-color: rgba(204, 209, 203, 0.3);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,8 +78,7 @@
         
         .modal_img {
             margin: 0 auto;
-        // background-color: rgba(20, 20, 255, 0.3);
-            height: 500px;
+            height: 450px;
             @include sp-tablet {
                 width: min(400px, 100%);
                 object-fit: contain;

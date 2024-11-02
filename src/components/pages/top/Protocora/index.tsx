@@ -12,6 +12,10 @@ export const Protocora = () => {
     const closeModal = () => {
         setSelectedImageIndex(null)
     }
+    // const getBackgroundColor = (index: number) => {
+    //     const colors = ['rgba(16, 31, 246, 0.8)', 'rgba(85, 185, 75, 0.8)', 'rgba(104, 45, 145, 0.8)', 'rgba(235, 51, 37, 0.8)', 'rgba(235, 51, 37, 0.8)']
+    //     return colors[index % colors.length] // インデックスによって色を選ぶ
+    // }
 
     return (
         <section id="protocora" >
