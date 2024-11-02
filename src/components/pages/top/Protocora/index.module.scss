@@ -3,9 +3,9 @@
 .protocora {
     position: relative;
     width: 100vw;
-    height: 100vw; //ここ変えなき
+    height: 160vw; //ここ変えなき
     @include sp-tablet {
-        height: 280vw;
+        height: 265vw;
     }
     overflow: hidden;
 }
@@ -16,7 +16,7 @@
     margin-top: 18.6vw;
     width: 100vw;
 
-    background-image: url('/assets/protocora/bg-wide.png');
+    background-image: url('/assets/protocora/bg-sp.png');
     background-size: contain;
     background-repeat: no-repeat;
     @include sp-tablet {
@@ -24,6 +24,7 @@
         background-image: url('/assets/protocora/bg-sp.png');
         background-size: cover;
         background-position: center;
+        height: 255vw;
     }
 }
 
@@ -37,11 +38,17 @@
 }
 
 .wrapper {
-    margin: 22vw auto;
+    margin: 19vw auto;
     text-align: center;
+    width: min(80%, 1000px);
+    height: 120vw;
 
     @include sp-tablet {
         width: 90vw;
+    }
+
+    .ptr_ttl {
+        margin: 0 auto;
     }
 
     .prts {
@@ -50,8 +57,35 @@
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
 
+        grid-template-columns: 33% 33% 33%;
         @include sp-tablet {
             grid-template-columns: 50% 50%;
         }
     } 
+
+    .modal {
+        position: fixed;
+        margin: 0 auto;
+        // background-color: rgba(20, 20, 255, 0.3);
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(204, 209, 203, 0.5); /* 背景を黒に */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0%; 
+        left: 0%;
+        z-index: 3;
+        
+        .modal_img {
+            margin: 0 auto;
+        // background-color: rgba(20, 20, 255, 0.3);
+            height: 500px;
+            @include sp-tablet {
+                width: min(400px, 100%);
+                object-fit: contain;
+            }
+        }
+    }
+
 }
