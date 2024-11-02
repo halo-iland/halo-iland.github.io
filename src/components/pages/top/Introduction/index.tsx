@@ -1,4 +1,3 @@
-import { secureHeapUsed } from 'crypto'
 import style from './index.module.scss'
 
 export const Introduction = () => {
