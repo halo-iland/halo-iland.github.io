@@ -1,6 +1,5 @@
 'use client'
 import style from './index.module.scss'
-import Link from 'next/link'	
 
 export const Header = () => {
     const scrollToId = (id:string) => {
