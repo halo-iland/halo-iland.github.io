@@ -49,7 +49,7 @@ export default function BehindTheArtworkPage() {
             <footer className={style.footer}>
                 <div className={style.share}>
                     <a href="https://www.instagram.com/halo.iland/" className={style.sns}>
-                        <img src="/assets/sns/Instagram_Glyph_White.svg" alt=""  />
+                        <img src="/assets/sns/Instagram_Glyph_Green.svg" alt=""  />
                     </a>
                     <p>Instagram</p>
                 </div> 
