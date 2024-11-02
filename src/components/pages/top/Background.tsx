@@ -55,7 +55,6 @@ const Background: React.FC = () => {
     };
 
     const calculateScrollFactor = () => {
-      const windowAspect = (window.innerWidth) / window.innerHeight;
       const scaledImageHeight = (window.innerWidth) / (1080 / 4320);
       return Math.min(1, window.innerHeight / scaledImageHeight);
     };

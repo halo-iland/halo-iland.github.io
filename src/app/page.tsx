@@ -1,5 +1,3 @@
-import Image from "next/image";
-// import styles from './page.module.scss'
 import Background from "@/components/pages/top/Background";
 import { Header } from "@/components/pages/top/Header";
 import { Protocora } from "@/components/pages/top/Protocora";

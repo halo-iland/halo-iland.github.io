@@ -1,4 +1,3 @@
-import { div } from 'three/webgpu'
 import style from './index.module.scss'
 
 export const Introduction = () => {
