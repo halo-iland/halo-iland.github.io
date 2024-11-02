@@ -2,11 +2,14 @@
 
 .logo {
     position: fixed;
+    z-index: 2;
     @include sp-tablet {
         margin: 0 auto;
         width: min(400px, 70%);
-        top: 25%;
-        left: 25%;
+    }
+    @include sp {
+        top: 0;
+        left: 0;
     }
 }
 
@@ -42,12 +45,19 @@
         p {
             margin: 0 auto;
             text-align: center;
-            font-size: 15px;
+            font-size: 14px;
             padding-top: 3vw;
             small {
                 color: #888;
                 font-size: 12px;
             }
         }
+    }
+}
+
+.sp_br {
+    display: none;
+    @include sp {
+        display: block;
     }
 }

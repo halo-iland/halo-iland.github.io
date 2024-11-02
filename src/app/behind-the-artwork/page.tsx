@@ -24,7 +24,7 @@ export default function BehindTheArtworkPage() {
             <section className={style.statement}>
                 <img src="/assets/imade/imade-bg-3.png" alt="" />
                 <div className={style.content}>
-                    <p>私たちは架空の島「ハロiland」を舞台に 新たな鑑賞体験を創造するアートワークチームです。</p>
+                    <p>私たちは架空の島「ハロiland」を舞台に <br className={style.sp_br}></br>新たな鑑賞体験を創造するアートワークチームです。</p>
                     <p>実際には存在しない世界をより現実味を持って皆さんに好きになっていただくために、「EP(Extended-Episode Playing)＊」＝「拡張する物語遊び」を提案いたします。</p>
                     <p>
                         芸術のチームとしての活動を、音楽の作品発表形態になぞらえながら定期的なかたちでお届けすることで<br />
