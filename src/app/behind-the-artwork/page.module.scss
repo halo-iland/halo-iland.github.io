@@ -35,7 +35,6 @@
 }
 
 .container {
-    background-color: #fff;
     width: 100%;
     .concept {
         overflow: hidden;
@@ -44,6 +43,7 @@
 
 .statement {
     margin: 0 auto;
+    background-color: #fff;
     @include sp-tablet{
         margin-top: 130vw;
     }
