@@ -14,6 +14,7 @@
 }
 
 .key {
+    width: 100%;
 }
 .concept {
     margin: 0 auto;
@@ -31,6 +32,13 @@
 .center{
     margin: 0 auto;
     opacity: 0.9;
+}
+
+.container {
+    width: 100%;
+    .concept {
+        overflow: hidden;
+    }
 }
 
 .statement {
@@ -64,4 +72,50 @@
     @include sp {
         display: block;
     }
+}
+
+.footer {
+    position: relative;
+    background-image: url("/assets/imade/image_2.png");
+    background-size: contain;
+    width: 100%;
+    height: 71.4vw;
+    color: rgb(74, 174, 87); 
+    text-align: center;
+
+    .sns {
+        display: block;
+        margin: 0 auto;
+        padding-top: min(200px, 32vw);
+        width: 80px;
+        transition: 0.5s opacity;
+
+        @include sp-tablet {
+            padding-top: min(100px);
+            width: 50px;
+            transition: 0.5s opacity;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &_wrapper {
+        margin: 0 auto;
+        width: max(30%, 150px);
+        .logo_ {
+            margin: 0 auto;
+            padding-top: max(1vw, 10px);
+            @include sp {
+                padding-top: 5vw;
+            }
+            &:hover {
+                opacity: 0.7;
+            }        
+        }
+    }
+}
+
+.wide {
+    width: 100%;
 }
