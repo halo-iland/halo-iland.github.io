@@ -31,8 +31,9 @@ export const Protocora = () => {
                             return (
                                 <>
                                     <div key={i} className={style.prt}>
-                                        <button onClick={() => openModal(i)} className={style.buttonStyle}>
-                                            <img src={`/assets/protocora/prts/prt0${i + 2}.png`} alt="" />
+                                        <img src={`/assets/protocora/prts/prt0${i + 2}.png`} alt="" />
+                                        <button onClick={() => openModal(i)}>
+                                            <img src={`/assets/protocora/masked/masked0${i + 2}.png`} alt="" className={style.masked}/>
                                         </button>
                                     </div>
                                     {selectedImageIndex === i && (

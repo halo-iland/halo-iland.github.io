@@ -63,6 +63,22 @@
         @include sp-tablet {
             grid-template-columns: 50% 50%;
         }
+        .prt {
+            position: relative;
+            .masked {
+                position: absolute;
+                width: 30%;
+                top: 28.5%;
+                left: 35%;
+                margin: auto;
+                &:hover {
+                    width: 35%;
+                    top: 26.5%;
+                    left: 32.5%;
+                    filter: drop-shadow(0px 0px 9px rgba(160, 160, 160, 0.7));
+                }
+            }
+        }
     } 
 
     .modal {
@@ -76,7 +92,7 @@
         align-items: center;
         top: 0%; 
         left: 0%;
-        z-index: 3;
+        z-index: 11;
         
         .modal_img {
             margin: 0 auto;
