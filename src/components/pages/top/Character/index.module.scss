@@ -57,7 +57,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            // transition: 0.5s background-image;
+            transition: 1s background-image;
 
             @include sp-tablet {
             }
@@ -70,19 +70,19 @@
             }
         }
         .sui {
-            background-image: url('/assets/characters/sui.PNG'); 
+            background-image: url('/assets/characters/_sui.PNG'); 
             &:hover {
                 background-image: url('/assets/characters/sui_.png');
             }
         }
         .uku {
-            background-image: url('/assets/characters/uku.PNG'); 
+            background-image: url('/assets/characters/_uku.PNG'); 
             &:hover {
                 background-image: url('/assets/characters/uku_.png');
             }
         }
         .niim {
-            background-image: url('/assets/characters/niim.PNG'); 
+            background-image: url('/assets/characters/_niim.PNG'); 
             &:hover {
                 background-image: url('/assets/characters/niim_.png');
             }
