@@ -1,3 +1,3 @@
 module.exports = {
-    siteUrl: "https://hogehoge.com",
+    siteUrl: "https://halo-iland.github.io/",
   };
