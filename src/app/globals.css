@@ -18,6 +18,14 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  /* @media (min-width: 960px) {
+    background-image: url('/assets/bg_wide.webp');
+  }
+  @media (max-width: 768px) {
+    background-image: url('/assets/bg.webp');
+  } */
+  background-size: contain;
+  z-index: -2;
 }
 
 @layer utilities {

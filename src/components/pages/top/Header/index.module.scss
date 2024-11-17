@@ -1,8 +1,56 @@
 @use '@/styles/common' as *;
 
-.header {
+.hamburger {
+    display: none;
+    
     @include sp-tablet {
-        height: 0;
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 5;
+        padding: 0;
+
+        span {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            left: 5px;
+            transition: all 0.3s ease;
+
+            &:nth-child(1) {
+                top: 10px;
+            }
+            &:nth-child(2) {
+                top: 19px;
+            }
+            &:nth-child(3) {
+                top: 28px;
+            }
+        }
+
+        &.active {
+            span {
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    top: 19px;
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    top: 19px;
+                }
+            }
+        }
     }
 }
 
@@ -17,8 +65,42 @@
     justify-content: center;
 
     @include sp-tablet {
-        display: none;
-        margin-top: 0;
+        visibility: hidden; // display: none の代わりに使用
+        opacity: 0; // 透明度を0に
+        height: 120vh;
+        width: 50vw;
+        top: -10vh;
+        right: -50vw; // 変更: 右端を基準に
+        left: auto; // 追加: leftの指定を解除
+        background-color: rgba(101, 255, 240, 0.2);
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease;
+        display: flex;
+        z-index: 11;
+        
+        &.open {
+            visibility: visible; // 表示する
+            opacity: 1; // 完全に不透明に
+            align-items: center;
+            transform: translateX(-100%); // 変更: 左方向に移動
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        li {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        a, button {
+            padding: 15px 0;
+            width: 100%;
+        }
     }
 
     ul {
@@ -29,7 +111,6 @@
     li {
         float: left;
         margin-bottom: 20px;
-        
     }
     a, button {
         color: white;
@@ -38,8 +119,11 @@
         padding: 10px 20px;
         display: block;
         transition: background-color 0.3s ease;
+        background: transparent;
+        border: none;
+        cursor: pointer;
     }
-    a,button:hover {
+    a, button:hover {
         opacity: 0.7;
     }
 }

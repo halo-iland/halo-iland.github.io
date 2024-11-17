@@ -21,15 +21,16 @@
         font-family: "Shippori Mincho", serif;
         font-weight: 400;
         font-style: normal;
-        margin-left: 10vw;
+        justify-content: center;
         @include sp-tablet {
             margin-left: 0;
         }
 
         h3 {
-            margin: 0 auto;            
+            margin: 0 auto;           
+            margin-bottom: 2vw;
             text-align: center;
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 2vw;
             
             @include sp {
@@ -47,7 +48,9 @@
     }
 
     .sirusi {
-        margin: 0 auto;
+        position: absolute;
+        right: 10vw;
+        bottom: -15%;
         width: min(20vw, 300px);
         object-fit: contain;
         text-align: center;

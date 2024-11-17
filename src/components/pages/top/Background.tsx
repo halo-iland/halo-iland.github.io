@@ -26,7 +26,7 @@ const Background: React.FC = () => {
 
     const loadTexture = (isWide: boolean) => {
       const textureLoader = new THREE.TextureLoader();
-      const texturePath = isWide ? '/assets/bg_wide.png' : '/assets/bg.png';
+      const texturePath = isWide ? '/assets/bg_wide.webp' : '/assets/bg.webp';
       
       return new Promise<THREE.Texture>((resolve) => {
         textureLoader.load(texturePath, (texture) => {
