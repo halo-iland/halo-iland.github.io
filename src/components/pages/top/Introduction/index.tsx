@@ -14,7 +14,7 @@ export const Introduction = () => {
                             うえの　うえに　あったもの
                         </p>
                     </div>
-                    <img src="/assets/kv-intro/intro.png" className={style.sirusi} alt="〜ぼうけんのしるし〜　ぼくたちは　ながいながい　たびの　すえ　おおきな　まるい　ひかりを　みつけた　[ハロ]　うえの　うえに　あったもの" />
+                    {/* <img src="/assets/kv-intro/intro.png" className={style.sirusi} alt="〜ぼうけんのしるし〜　ぼくたちは　ながいながい　たびの　すえ　おおきな　まるい　ひかりを　みつけた　[ハロ]　うえの　うえに　あったもの" /> */}
                 </div>
                 <img src="/assets/kv-intro/map.png" className={style.map} alt="巴楼愛卵島　はろあいらんど" />
             </div>
