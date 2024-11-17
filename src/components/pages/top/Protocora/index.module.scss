@@ -5,7 +5,7 @@
     width: 100vw;
     height: 160vw; //ここ変えなき
     @include sp-tablet {
-        height: 265vw;
+        height: 295vw;
     }
     overflow: hidden;
 }
@@ -15,16 +15,10 @@
     position: absolute;
     margin-top: 18.6vw;
     width: 100vw;
-
     background-image: url('/assets/protocora/bg-sp.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     @include sp-tablet {
-        background-color: #fff;
-        background-image: url('/assets/protocora/bg-sp.png');
-        background-size: cover;
-        background-position: center;
-        height: 255vw;
+        height: 265vw;
     }
 }
 
@@ -41,7 +35,7 @@
     margin: 19vw auto;
     text-align: center;
     width: min(80%, 1000px);
-    height: 120vw;
+    height: 180vw;
 
     @include sp-tablet {
         width: 90vw;
