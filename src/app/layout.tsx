@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "halo-iland official",
-  description: "ハロ・i land -はじめての島- 公式HP 架空の島「ハロ」を舞台に物語が広がるアートコンテンツ",
+  title: "ハロ・i land -はじめての島- 公式HP | halo-iland official",
+  description: "架空の島「ハロ」を舞台に物語が広がるアートコンテンツ",
 };
 
 export default function RootLayout({
